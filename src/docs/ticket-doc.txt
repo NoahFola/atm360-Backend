@@ -1,0 +1,203 @@
+GET /tickets
+Description: Retrieves a list of all ticket resources.
+
+Query Parameters (Optional):
+  atmId: (string) Filter by ATM ID (e.g., ?atmId=atm-001).
+  engineerId: (string) Filter by engineer ID (e.g., ?engineerId=eng-001).
+  status: (string) Filter by status (e.g., ?status=OPEN).
+  severity: (string) Filter by severity (e.g., ?severity=HIGH).
+  issueType: (string) Filter by issue type (e.g., ?issueType=CASH_OUT).
+  reportedBy: (string) Filter by reporter type (e.g., ?reportedBy=SYSTEM).
+
+Success Response (200 OK):
+  Returns a JSON array of Ticket objects.
+  Returns an empty array [] if no tickets match.
+
+GET /tickets/:id
+Description: Retrieves a single ticket resource by its unique ID.
+
+Path Parameters:
+  id (string): The unique identifier of the ticket.
+
+Success Response (200 OK):
+  Returns the corresponding Ticket object.
+
+Error Responses:
+  404 Not Found: A ticket with the specified id does not exist.
+
+POST /tickets
+Description: Creates a new ticket resource.
+
+Request Body:
+  A JSON object containing the data for the new ticket. Server-generated fields (id, createdAt, updatedAt) should be omitted.
+
+Example Request Body:
+{
+  "atmId": "atm-001",
+  "engineerId": "eng-001",
+  "reportedBy": "SYSTEM",
+  "issueType": "CASH_OUT",
+  "severity": "HIGH",
+  "description": "ATM is out of cash and showing error code C101",
+  "status": "OPEN",
+  "sourceData": {
+    "customerReportId": "cust-report-123"
+  }
+}
+
+Success Response (201 Created):
+  Returns the complete, newly created Ticket object, including the server-generated id and timestamps.
+
+Error Responses:
+  400 Bad Request: The request body is missing required fields or contains invalid data.
+
+PATCH /tickets/:id
+Description: Partially updates an existing ticket resource. Only the fields provided in the request body will be modified.
+
+Path Parameters:
+  id (string): The unique identifier of the ticket to be updated.
+
+Request Body:
+  A JSON object containing only the fields to be updated.
+
+Example (Updating Status and Assigning Engineer):
+{
+  "status": "ASSIGNED",
+  "engineerId": "eng-001",
+  "severity": "CRITICAL"
+}
+
+Example (Adding Resolution):
+{
+  "status": "RESOLVED",
+  "resolution": {
+    "summary": "Replaced cash cassette and cleared jam",
+    "resolvedAt": "2024-01-15T14:30:00Z",
+    "partsUsed": ["cassette-spring-001"],
+    "timeSpentMinutes": 45,
+    "proofPhotoUrl": "https://example.com/photos/resolution-123.jpg"
+  }
+}
+
+Example (Adding Geo Validation):
+{
+  "geoValidation": {
+    "engineerLat": 6.509,
+    "engineerLng": 3.379,
+    "validatedAt": "2024-01-15T14:25:00Z"
+  }
+}
+
+Success Response (200 OK):
+  Returns the fully updated Ticket object.
+
+Error Responses:
+  400 Bad Request: The request body contains invalid data.
+  404 Not Found: A ticket with the specified id does not exist.
+
+PUT /tickets/:id
+Description: Replaces an existing ticket resource. This is a full replacement; the entire ticket object must be provided.
+Note: PATCH is generally preferred for updates.
+
+Path Parameters:
+  id (string): The unique identifier of the ticket to be updated.
+
+Request Body:
+  A complete JSON object representing the ticket's new state (excluding server-generated fields like id, createdAt, etc.).
+
+Success Response (200 OK):
+  Returns the fully updated Ticket object.
+
+Error Responses:
+  400 Bad Request: The request body is invalid or incomplete.
+  404 Not Found: A ticket with the specified id does not exist.
+
+DELETE /tickets/:id
+Description: Permanently removes a ticket resource from the system.
+
+Path Parameters:
+  id (string): The unique identifier of the ticket to be deleted.
+
+Success Response (204 No Content):
+  Indicates successful deletion. No data is returned in the response body.
+
+Error Responses:
+  404 Not Found: A ticket with the specified id does not exist.
+
+GET /tickets/atm/:atmId
+Description: Retrieves all tickets associated with a specific ATM.
+
+Path Parameters:
+  atmId (string): The unique identifier of the ATM.
+
+Query Parameters (Optional):
+  status: (string) Filter by status (e.g., ?status=OPEN).
+  limit: (number) Limit the number of results (e.g., ?limit=10).
+
+Success Response (200 OK):
+  Returns a JSON array of Ticket objects for the specified ATM.
+  Returns an empty array [] if no tickets match.
+
+Error Responses:
+  404 Not Found: No ATM found with the specified id.
+
+GET /tickets/engineer/:engineerId
+Description: Retrieves all tickets assigned to a specific engineer.
+
+Path Parameters:
+  engineerId (string): The unique identifier of the engineer.
+
+Query Parameters (Optional):
+  status: (string) Filter by status (e.g., ?status=IN_PROGRESS).
+  timeframe: (string) Filter by timeframe (e.g., ?timeframe=last_7_days).
+
+Success Response (200 OK):
+  Returns a JSON array of Ticket objects assigned to the specified engineer.
+  Returns an empty array [] if no tickets match.
+
+Error Responses:
+  404 Not Found: No engineer found with the specified id.
+
+PATCH /tickets/:id/assign
+Description: Assigns an engineer to a ticket and updates its status.
+
+Path Parameters:
+  id (string): The unique identifier of the ticket.
+
+Request Body:
+{
+  "engineerId": "eng-001",
+  "status": "ASSIGNED"
+}
+
+Success Response (200 OK):
+  Returns the updated Ticket object.
+
+Error Responses:
+  400 Bad Request: Invalid request body.
+  404 Not Found: Ticket or engineer not found.
+
+PATCH /tickets/:id/resolve
+Description: Marks a ticket as resolved with resolution details.
+
+Path Parameters:
+  id (string): The unique identifier of the ticket.
+
+Request Body:
+{
+  "resolution": {
+    "summary": "Fixed hardware issue",
+    "resolvedAt": "2024-01-15T14:30:00Z",
+    "partsUsed": ["part-001", "part-002"],
+    "timeSpentMinutes": 60,
+    "proofPhotoUrl": "https://example.com/photos/resolution.jpg"
+  },
+  "status": "RESOLVED"
+}
+
+Success Response (200 OK):
+  Returns the updated Ticket object.
+
+Error Responses:
+  400 Bad Request: Invalid resolution data.
+  404 Not Found: Ticket not found.

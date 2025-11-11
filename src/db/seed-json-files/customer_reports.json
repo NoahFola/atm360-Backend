@@ -1,0 +1,100 @@
+[
+  {
+    "id": "report-001",
+    "atmId": "ATM-LAG-001",
+    "customerProfileId": "cust-user-01",
+    "channel": "MOBILE_APP",
+    "issueReported": "ATM_DOWN",
+    "timestamp": "2025-11-09T08:20:00.000Z",
+    "verified": true,
+    "ticketId": "ticket-001"
+  },
+  {
+    "id": "report-002",
+    "atmId": "ATM-LAG-003",
+    "customerProfileId": "cust-user-02",
+    "channel": "MOBILE_APP",
+    "issueReported": "NO_CASH",
+    "timestamp": "2025-11-09T05:10:00.000Z",
+    "verified": true,
+    "ticketId": "ticket-002"
+  },
+  {
+    "id": "report-003",
+    "atmId": "ATM-OND-001",
+    "customerPhone": "08099887766",
+    "channel": "USSD",
+    "issueReported": "SLOT_JAMMED",
+    "timestamp": "2025-11-09T10:35:00.000Z",
+    "verified": false,
+    "ticketId": "ticket-003"
+  },
+  {
+    "id": "report-004",
+    "atmId": "ATM-OGN-001",
+    "customerProfileId": "cust-user-04",
+    "channel": "WEB",
+    "issueReported": "ATM_DOWN",
+    "timestamp": "2025-11-09T10:40:00.000Z",
+    "verified": true,
+    "ticketId": "ticket-004"
+  },
+  {
+    "id": "report-005",
+    "atmId": "ATM-LAG-002",
+    "customerPhone": "07012345678",
+    "channel": "WHATSAPP",
+    "issueReported": "NO_CASH",
+    "timestamp": "2025-11-09T10:30:00.000Z",
+    "verified": true,
+    "ticketId": "ticket-005"
+  },
+  {
+    "id": "report-006",
+    "atmId": "ATM-FCT-001",
+    "customerProfileId": "cust-user-03",
+    "channel": "MOBILE_APP",
+    "issueReported": "SCREEN_BLANK",
+    "timestamp": "2025-11-08T18:00:00.000Z",
+    "verified": false,
+    "ticketId": "ticket-006"
+  },
+  {
+    "id": "report-007",
+    "atmId": "ATM-RIV-001",
+    "customerPhone": "08123456789",
+    "channel": "USSD",
+    "issueReported": "OTHER",
+    "timestamp": "2025-11-08T19:00:00.000Z",
+    "verified": false,
+    "ticketId": "ticket-007"
+  },
+  {
+    "id": "report-008",
+    "atmId": "ATM-KAN-001",
+    "customerProfileId": "cust-user-05",
+    "channel": "MOBILE_APP",
+    "issueReported": "SLOT_JAMMED",
+    "timestamp": "2025-11-09T09:00:00.000Z",
+    "verified": false,
+    "ticketId": "ticket-008"
+  },
+  {
+    "id": "report-009",
+    "atmId": "ATM-LAG-007",
+    "customerProfileId": "cust-user-06",
+    "channel": "WEB",
+    "issueReported": "NO_CASH",
+    "timestamp": "2025-11-09T10:00:00.000Z",
+    "verified": false
+  },
+  {
+    "id": "report-010",
+    "atmId": "ATM-EDO-001",
+    "customerPhone": "09087654321",
+    "channel": "WHATSAPP",
+    "issueReported": "ATM_DOWN",
+    "timestamp": "2025-11-09T11:00:00.000Z",
+    "verified": false
+  }
+]
