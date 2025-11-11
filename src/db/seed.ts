@@ -6,7 +6,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // --- Type Imports (assuming types/schema.ts is at ../types/schema.ts) ---
-import type { Bank, User, BankAdministrator, Engineer, CustomerProfile, ATM, Ticket, CustomerReport } from '../schema/types.js';
+import type { Bank, User, BankAdministrator, Engineer, CustomerProfile, ATM, Ticket, CustomerReport } from '../types/schema.js';
 
 // --- 1. Get Path to Seed Data ---
 const __filename = fileURLToPath(import.meta.url);

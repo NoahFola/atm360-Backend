@@ -1,6 +1,6 @@
 import db from '../db/connect.js';
 import crypto from 'crypto';
-import type { ATM } from '../schema/types.js'; // Using the full schema type
+import type { ATM } from '../types/schema.js'; // Using the full schema type
 
 // --- Type Definition ---
 // This is the shape of the data as it exists in the SQLite table.
