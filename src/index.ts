@@ -1,8 +1,10 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import alertsRoute from './routes/alertsRoute.js';
 import atmRoutes from './routes/atmRoutes.js';
 import { initializeDatabase } from './db/seed.js';
+
 
 // Load environment variables (optional, but good practice)
 dotenv.config();
@@ -22,6 +24,7 @@ app.use(cors());
 
 //routes
 app.use("/atms", atmRoutes);
+app.use("/alerts", alertsRoute);
 
 // A simple GET route
 app.get('/', (req: Request, res: Response) => {
