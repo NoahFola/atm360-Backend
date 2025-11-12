@@ -33,7 +33,7 @@ export const autoDispatchEngineer = (req: Request, res: Response) => {
 
     if (!atmId || !issueType) {
       return res.status(400).json({ message: 'Please provide atmId and issueType' });
-    }
+    }  
 
     // Call the service logic
     const result = assignNearestEngineer(ticketId, atmId, issueType);

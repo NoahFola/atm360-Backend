@@ -10,7 +10,7 @@ import  {getAllAtmsTelemetry} from '../services/atmTelemetry.js';
 export const getAllAtms = (req: Request, res: Response) => {
   try {
     console.log('Fetching all ATMs from model');
-    const atms = AtmModel.findAllAtms(); // <--- THE FIX
+    const atms = AtmModel.findAllAtms();
     res.status(200).json(atms);
   } catch (err) {
     let errorMessage = 'Server error fetching ATMs';
