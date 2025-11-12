@@ -3,6 +3,9 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import alertsRoute from './routes/alertsRoute.js';
 import atmRoutes from './routes/atmRoutes.js';
+import authRouter from "./routes/authRoutes.js";
+import reportRouter from "./routes/reportRoute.js";
+import engineerRoutes from "./routes/engineerRoutes.js";
 import { initializeDatabase } from './db/seed.js';
 
 
@@ -26,6 +29,8 @@ app.use(cors());
 app.use("/atms", atmRoutes);
 app.use("/alerts", alertsRoute);
 app.use("/auth", authRouter);
+app.use("/stats", reportRouter);
+app.use("/engineers", engineerRoutes);
 
 // A simple GET route
 app.get('/', (req: Request, res: Response) => {
