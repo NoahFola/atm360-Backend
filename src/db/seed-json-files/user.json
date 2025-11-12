@@ -1,0 +1,38 @@
+{
+  "admins": [
+    { "id": "admin-user-01", "email": "admin1@zenith.com", "password": "password", "role": "ADMIN" },
+    { "id": "admin-user-02", "email": "admin2@zenith.com", "password": "password", "role": "ADMIN" },
+    { "id": "admin-user-03", "email": "admin3@zenith.com", "password": "password", "role": "ADMIN" },
+    { "id": "admin-user-04", "email": "ops-manager@gtb.com", "password": "password", "role": "ADMIN" },
+    { "id": "admin-user-05", "email": "head-ops@access.com", "password": "password", "role": "ADMIN" },
+    { "id": "admin-user-06", "email": "admin.uba@uba.com", "password": "password", "role": "ADMIN" },
+    { "id": "admin-user-07", "email": "it-admin@firstbank.com", "password": "password", "role": "ADMIN" },
+    { "id":"admin-user-08", "email": "manager@fidelity.com", "password": "password", "role": "ADMIN" },
+    { "id": "admin-user-09", "email": "support@ecobank.com", "password": "password", "role": "ADMIN" },
+    { "id": "admin-user-10", "email": "admin@stanbic.com", "password": "password", "role": "ADMIN" }
+  ],
+  "engineers": [
+    { "id": "eng-user-01", "email": "adebayo@zenith.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-02", "email": "tunde@zenith.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-03", "email": "emeka@zenith.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-04", "email": "musa@gtb.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-05", "email": "bola@access.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-06", "email": "david@uba.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-07", "email": "samson@firstbank.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-08", "email": "frank@fidelity.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-09", "email": "ali@ecobank.com", "password": "password", "role": "ENGINEER" },
+    { "id": "eng-user-10", "email": "peter@stanbic.com", "password": "password", "role": "ENGINEER" }
+  ],
+  "customers": [
+    { "id": "cust-user-01", "email": "chioma@gmail.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-02", "email": "mike@yahoo.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-03", "email": "fatima@hotmail.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-04", "email": "james@outlook.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-05", "email": "joy@gmail.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-06", "email": "isaac@gmail.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-07", "email": "mary@yahoo.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-08", "email": "charles@gmail.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-09", "email": "blessing@hotmail.com", "password": "password", "role": "CUSTOMER" },
+    { "id": "cust-user-10", "email": "sade@gmail.com", "password": "password", "role": "CUSTOMER" }
+  ]
+}

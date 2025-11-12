@@ -1,0 +1,126 @@
+[
+  {
+    "id": "ticket-001",
+    "atmId": "ATM-LAG-001",
+    "engineerId": "eng-user-01",
+    "reportedBy": "CUSTOMER",
+    "issueType": "NETWORK_FAILURE",
+    "severity": "CRITICAL",
+    "description": "Customer reported ATM is down. Verified by telemetry.",
+    "status": "ASSIGNED",
+    "sourceData": { "customerReportId": "report-001" }
+  },
+  {
+    "id": "ticket-002",
+    "atmId": "ATM-LAG-003",
+    "engineerId": null,
+    "reportedBy": "CUSTOMER",
+    "issueType": "CASH_OUT",
+    "severity": "HIGH",
+    "description": "Customer reported no cash. Verified by telemetry.",
+    "status": "OPEN",
+    "sourceData": { "customerReportId": "report-002" }
+  },
+  {
+    "id": "ticket-003",
+    "atmId": "ATM-OND-001",
+    "engineerId": null,
+    "reportedBy": "CUSTOMER",
+    "issueType": "CARD_JAM",
+    "severity": "MEDIUM",
+    "description": "Customer reported card slot jammed via USSD.",
+    "status": "OPEN",
+    "sourceData": { "customerReportId": "report-003" }
+  },
+  {
+    "id": "ticket-004",
+    "atmId": "ATM-OGN-001",
+    "engineerId": "eng-user-07",
+    "reportedBy": "CUSTOMER",
+    "issueType": "NETWORK_FAILURE",
+    "severity": "HIGH",
+    "description": "ATM is intermittent. Customer reported ATM down.",
+    "status": "ASSIGNED",
+    "sourceData": { "customerReportId": "report-004" }
+  },
+  {
+    "id": "ticket-005",
+    "atmId": "ATM-LAG-002",
+    "engineerId": "eng-user-02",
+    "reportedBy": "CUSTOMER",
+    "issueType": "CASH_OUT",
+    "severity": "HIGH",
+    "description": "WhatsApp report: ATM is not dispensing cash. Verified by telemetry.",
+    "status": "IN_PROGRESS",
+    "sourceData": { "customerReportId": "report-005" }
+  },
+  {
+    "id": "ticket-006",
+    "atmId": "ATM-FCT-001",
+    "engineerId": "eng-user-03",
+    "reportedBy": "CUSTOMER",
+    "issueType": "SCREEN_FAILURE",
+    "severity": "MEDIUM",
+    "description": "Customer reported blank screen on mobile app.",
+    "status": "IN_PROGRESS",
+    "sourceData": { "customerReportId": "report-006" }
+  },
+  {
+    "id": "ticket-007",
+    "atmId": "ATM-RIV-001",
+    "engineerId": "eng-user-08",
+    "reportedBy": "CUSTOMER",
+    "issueType": "OTHER",
+    "severity": "LOW",
+    "description": "Customer reported 'other' issue via USSD.",
+    "status": "ASSIGNED",
+    "sourceData": { "customerReportId": "report-007" }
+  },
+  {
+    "id": "ticket-008",
+    "atmId": "ATM-KAN-001",
+    "engineerId": "eng-user-09",
+    "reportedBy": "CUSTOMER",
+    "issueType": "CARD_JAM",
+    "severity": "MEDIUM",
+    "description": "Customer reported card slot jammed.",
+    "status": "CLOSED",
+    "resolution": {
+      "summary": "Removed jammed card from slot. Tested OK.",
+      "resolvedAt": "2025-11-09T11:00:00.000Z",
+      "partsUsed": ["Card retrieval tool"],
+      "timeSpentMinutes": 45,
+      "proofPhotoUrl": "https://placehold.co/600x400/eee/ccc?text=ProofOfFix_KAN-001"
+    },
+    "sourceData": { "customerReportId": "report-008" }
+  },
+  {
+    "id": "ticket-009",
+    "atmId": "ATM-BOR-001",
+    "engineerId": "eng-user-09",
+    "reportedBy": "SYSTEM",
+    "issueType": "HARDWARE_ERROR",
+    "severity": "CRITICAL",
+    "description": "System detected main board failure. ATM is under maintenance.",
+    "status": "IN_PROGRESS",
+    "sourceData": { "atmSnapshot": { "id": "ATM-BOR-001", "status": "MAINTENANCE" } }
+  },
+  {
+    "id": "ticket-010",
+    "atmId": "ATM-RIV-002",
+    "engineerId": "eng-user-08",
+    "reportedBy": "SYSTEM",
+    "issueType": "POWER_ISSUE",
+    "severity": "HIGH",
+    "description": "ATM switched to inverter power, generator failed to start.",
+    "status": "CLOSED",
+    "resolution": {
+      "summary": "Generator refueled and restarted. ATM back on mains.",
+      "resolvedAt": "2025-11-08T14:30:00.000Z",
+      "partsUsed": ["Diesel"],
+      "timeSpentMinutes": 60,
+      "proofPhotoUrl": "https://placehold.co/600x400/eee/ccc?text=ProofOfFix_RIV-002"
+    },
+    "sourceData": { "atmSnapshot": { "id": "ATM-RIV-002", "powerStatus": { "mains": false, "generator": false, "inverter": true } } }
+  }
+]
