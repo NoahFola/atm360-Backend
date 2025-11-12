@@ -25,6 +25,7 @@ app.use(cors());
 //routes
 app.use("/atms", atmRoutes);
 app.use("/alerts", alertsRoute);
+app.use("/auth", authRouter);
 
 // A simple GET route
 app.get('/', (req: Request, res: Response) => {
