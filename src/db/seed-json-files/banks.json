@@ -1,0 +1,52 @@
+[
+  {
+    "id": "zenith-bank-plc",
+    "name": "Zenith Bank Plc",
+    "shortCode": "ZENITH"
+  },
+  {
+    "id": "gtbank-plc",
+    "name": "Guaranty Trust Bank",
+    "shortCode": "GTB"
+  },
+  {
+    "id": "access-bank-plc",
+    "name": "Access Bank",
+    "shortCode": "ACCESS"
+  },
+  {
+    "id": "uba-plc",
+    "name": "United Bank for Africa",
+    "shortCode": "UBA"
+  },
+  {
+    "id": "first-bank-plc",
+    "name": "First Bank of Nigeria",
+    "shortCode": "FBN"
+  },
+  {
+    "id": "fidelity-bank-plc",
+    "name": "Fidelity Bank",
+    "shortCode": "FIDELITY"
+  },
+  {
+    "id": "ecobank-nig",
+    "name": "Ecobank Nigeria",
+    "shortCode": "ECOBANK"
+  },
+  {
+    "id": "stanbic-ibtc",
+    "name": "Stanbic IBTC Bank",
+    "shortCode": "STANBIC"
+  },
+  {
+    "id": "sterling-bank",
+    "name": "Sterling Bank",
+    "shortCode": "STERLING"
+  },
+  {
+    "id": "wema-bank",
+    "name": "Wema Bank",
+    "shortCode": "WEMA"
+  }
+]

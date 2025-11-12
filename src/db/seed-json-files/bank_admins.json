@@ -1,0 +1,12 @@
+[
+  { "userId": "admin-user-01", "name": "Zenith Admin 1", "phone": "08011111111", "bankId": "zenith-bank-plc", "permissions": ["VIEW_REPORTS", "DISPATCH_ENGINEERS", "MANAGE_USERS"] },
+  { "userId": "admin-user-02", "name": "Zenith Admin 2", "phone": "08011111112", "bankId": "zenith-bank-plc", "permissions": ["VIEW_REPORTS", "DISPATCH_ENGINEERS"] },
+  { "userId": "admin-user-03", "name": "Zenith Admin 3", "phone": "08011111113", "bankId": "zenith-bank-plc", "permissions": ["VIEW_REPORTS"] },
+  { "userId": "admin-user-04", "name": "GTB Ops Manager", "phone": "08022222222", "bankId": "gtbank-plc", "permissions": ["VIEW_REPORTS", "DISPATCH_ENGINEERS", "MANAGE_USERS"] },
+  { "userId": "admin-user-05", "name": "Access Head Ops", "phone": "08033333333", "bankId": "access-bank-plc", "permissions": ["VIEW_REPORTS", "DISPATCH_ENGINEERS"] },
+  { "userId": "admin-user-06", "name": "UBA Admin", "phone": "08044444444", "bankId": "uba-plc", "permissions": ["VIEW_REPORTS", "DISPATCH_ENGINEERS", "MANAGE_USERS"] },
+  { "userId": "admin-user-07", "name": "First Bank IT", "phone": "08055555555", "bankId": "first-bank-plc", "permissions": ["VIEW_REPORTS"] },
+  { "userId": "admin-user-08", "name": "Fidelity Manager", "phone": "08066666666", "bankId": "fidelity-bank-plc", "permissions": ["VIEW_REPORTS", "DISPATCH_ENGINEERS"] },
+  { "userId": "admin-user-09", "name": "Ecobank Support", "phone": "08077777777", "bankId": "ecobank-nig", "permissions": ["VIEW_REPORTS"] },
+  { "userId": "admin-user-10", "name": "Stanbic Admin", "phone": "08088888888", "bankId": "stanbic-ibtc", "permissions": ["VIEW_REPORTS", "DISPATCH_ENGINEERS", "MANAGE_USERS"] }
+]

@@ -1,0 +1,12 @@
+[
+  { "userId": "cust-user-01", "name": "Chioma Okonkwo", "phone": "09011223344" },
+  { "userId": "cust-user-02", "name": "Mike Adeleke", "phone": "08022334455" },
+  { "userId": "cust-user-03", "name": "Fatima Bello", "phone": "07033445566" },
+  { "userId": "cust-user-04", "name": "James Nwachukwu", "phone": "08144556677" },
+  { "userId": "cust-user-05", "name": "Joy Danladi", "phone": "09055667788" },
+  { "userId": "cust-user-06", "name": "Isaac Aliyu", "phone": "08066778899" },
+  { "userId": "cust-user-07", "name": "Mary Agboola", "phone": "07077889900" },
+  { "userId": "cust-user-08", "name": "Charles Efe", "phone": "08188990011" },
+  { "userId": "cust-user-09", "name": "Blessing Ojo", "phone": "09099001122" },
+  { "userId": "cust-user-10", "name": "Sade Adewale", "phone": "08011223344" }
+]

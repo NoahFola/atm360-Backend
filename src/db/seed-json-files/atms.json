@@ -1,0 +1,1706 @@
+[
+  {
+    "id": "ATM-LAG-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "ALLEN AVENUE",
+      "address": "23 ALLEN AVENUE IKEJA. LAGOS.",
+      "lga": "Ikeja",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.6053, "lng": 3.3496 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "OFFLINE",
+    "lastUpdated": "2025-11-09T08:15:00.000Z",
+    "networkStatus": "DISCONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 7800000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": false, "generator": false, "inverter": false, "fuelLevel": 0 },
+    "diagnostics": { "temperatureC": 55.0, "errorCodes": ["D404", "P501"], "lastErrorTimestamp": "2025-11-09T08:10:00.000Z" },
+    "predictiveScore": { "failureRisk": 1.0, "cashOutRisk": 0.0, "networkFailureRisk": 1.0 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 65.2, "downtimeMinutesThisMonth": 2800 }
+  },
+  {
+    "id": "ATM-OND-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Akure Branch 2",
+      "address": "No. 100B, Hospital Road, Akure.",
+      "lga": "Akure South",
+      "state": "Ondo",
+      "coordinates": { "lat": 7.2526, "lng": 5.1930 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:30:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 12500000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": false, "generator": true, "inverter": true, "fuelLevel": 25 },
+    "diagnostics": { "temperatureC": 42.5, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.68, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.0, "downtimeMinutesThisMonth": 150 }
+  },
+  {
+    "id": "ATM-LAG-002",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "KINGSWAY",
+      "address": "2 AROMIRE STREET OFF ALFRED REWANE ROAD IKOYI, LAGOS",
+      "lga": "Eti-Osa",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.4518, "lng": 3.4243 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:25:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 3800000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 95 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.85, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.1, "downtimeMinutesThisMonth": 45 }
+  },
+  {
+    "id": "ATM-LAG-003",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "ILUPEJU 2",
+      "address": "201 IKORODU ROAD, OBANIKORO",
+      "lga": "Somolu",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.5445, "lng": 3.3683 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "OUT_OF_CASH",
+    "lastUpdated": "2025-11-09T05:00:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 450000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": ["C101"], "lastErrorTimestamp": "2025-11-09T04:55:00.000Z" },
+    "predictiveScore": { "failureRisk": 0.1, "cashOutRisk": 1.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 92.0, "downtimeMinutesThisMonth": 620 }
+  },
+  {
+    "id": "ATM-OGN-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "MOUNTAIN TOP UNIVERSITY",
+      "address": "KM 12, Lagos-Ibadan Expressway, MFM/Prayer City, Ogun State",
+      "lga": "Obafemi Owode",
+      "state": "Ogun",
+      "coordinates": { "lat": 6.8145, "lng": 3.4215 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:37:00.000Z",
+    "networkStatus": "INTERMITTENT",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 15000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 38.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.29, "cashOutRisk": 0.0, "networkFailureRisk": 0.8 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.3, "downtimeMinutesThisMonth": 210 }
+  },
+  {
+    "id": "ATM-LAG-004",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "OZUMBA MBADIWE",
+      "address": "PLOT 873, OZUMBA MBADIWE AVENUE, VICTORIA ISLAND, LAGOS",
+      "lga": "Eti-Osa",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.4349, "lng": 3.4243 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:38:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 18500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 100 },
+    "diagnostics": { "temperatureC": 33.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.8, "downtimeMinutesThisMonth": 10 }
+  },
+  {
+    "id": "ATM-RIV-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "OLU OBASANJO",
+      "address": "117, OLU OBASANJO ROAD, GRA PHASE 2, PORT HARCOURT.",
+      "lga": "Port Harcourt",
+      "state": "Rivers",
+      "coordinates": { "lat": 4.8156, "lng": 7.0299 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:35:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 11000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.5, "downtimeMinutesThisMonth": 25 }
+  },
+  {
+    "id": "ATM-FCT-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "MAITAMA 2",
+      "address": "2, YOBE CLOSE, OFF YEDSERAM STREET, IBB WAY, MAITAMA, ABUJA",
+      "lga": "Abuja Municipal",
+      "state": "FCT",
+      "coordinates": { "lat": 9.0765, "lng": 7.4913 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:38:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 19500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 100 },
+    "diagnostics": { "temperatureC": 32.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.9, "downtimeMinutesThisMonth": 5 }
+  },
+  {
+    "id": "ATM-DEL-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "WARRI 2",
+      "address": "23, OGUNU ROAD",
+      "lga": "Warri South",
+      "state": "Delta",
+      "coordinates": { "lat": 5.5186, "lng": 5.7614 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:36:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 8000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.0, "downtimeMinutesThisMonth": 70 }
+  },
+  {
+    "id": "ATM-LAG-005",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "ADEOLA ODEKU 2",
+      "address": "PLOT 300 ADEOLA ODEKU STREET, VICTORIA ISLAND LAGOS",
+      "lga": "Eti-Osa",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.4300, "lng": 3.4137 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:37:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 17000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 100 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.7, "downtimeMinutesThisMonth": 15 }
+  },
+  {
+    "id": "ATM-FCT-002",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "ALGERIA STREET (WUSE ANNEX)",
+      "address": "PLOT 2883,ALGERIA STREET WUSE ZONE 3 ABUJA FCT",
+      "lga": "Abuja Municipal",
+      "state": "FCT",
+      "coordinates": { "lat": 9.0716, "lng": 7.4785 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:35:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 14000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 33.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.2, "downtimeMinutesThisMonth": 60 }
+  },
+  {
+    "id": "ATM-BOR-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Maiduguri Branch 1",
+      "address": "18, Shehu Laminu Way Maiduguri",
+      "lga": "Maiduguri",
+      "state": "Borno",
+      "coordinates": { "lat": 11.8465, "lng": 13.1561 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "MAINTENANCE",
+    "lastUpdated": "2025-11-08T14:00:00.000Z",
+    "networkStatus": "DISCONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 0,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": false, "generator": false, "inverter": false, "fuelLevel": 0 },
+    "diagnostics": { "temperatureC": 30.0, "errorCodes": ["M101"], "lastErrorTimestamp": "2025-11-08T13:55:00.000Z" },
+    "predictiveScore": { "failureRisk": 1.0, "cashOutRisk": 1.0, "networkFailureRisk": 1.0 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 80.0, "downtimeMinutesThisMonth": 1500 }
+  },
+  {
+    "id": "ATM-LAG-006",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Yabatech",
+      "address": "Yaba College of Technology, Yaba, Lagos State",
+      "lga": "Lagos Mainland",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.5173, "lng": 3.3799 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:38:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 10000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 100 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.9, "downtimeMinutesThisMonth": 80 }
+  },
+  {
+    "id": "ATM-EDO-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Ekenwa Road Branch",
+      "address": "3 Ekenwan Road, Benin City, Edo State",
+      "lga": "Oredo",
+      "state": "Edo",
+      "coordinates": { "lat": 6.3392, "lng": 5.6179 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:37:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 13000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.3, "downtimeMinutesThisMonth": 50 }
+  },
+  {
+    "id": "ATM-LAG-007",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Ikotun Branch",
+      "address": "No 44 Idimu-Ikotun Road, Ikotun, Lagos State",
+      "lga": "Alimosho",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.5500, "lng": 3.2644 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:35:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 9500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 100 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.0, "downtimeMinutesThisMonth": 75 }
+  },
+  {
+    "id": "ATM-OGN-002",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Akute Branch",
+      "address": "No. 38,Ajuwon Akute Road, Akute Abeokuta, Ogun State",
+      "lga": "Ifo",
+      "state": "Ogun",
+      "coordinates": { "lat": 6.7028, "lng": 3.3364 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:38:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 14000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.4, "downtimeMinutesThisMonth": 40 }
+  },
+  {
+    "id": "ATM-LAG-008",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "IKORODU 2",
+      "address": "5, OBA SEKUMADE RD, EBUTE-IPAKODO, IKORODU, LAGOS",
+      "lga": "Ikorodu",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.6111, "lng": 3.5133 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:37:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 16000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 100 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.6, "downtimeMinutesThisMonth": 20 }
+  },
+  {
+    "id": "ATM-RIV-002",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Oginigba Branch",
+      "address": "147, Trans Amadi Industrial Layout, Port Harcourt.",
+      "lga": "Port Harcourt",
+      "state": "Rivers",
+      "coordinates": { "lat": 4.8191, "lng": 7.0302 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:36:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 11500000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.0, "downtimeMinutesThisMonth": 70 }
+  },
+  {
+    "id": "ATM-ADM-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Numan Branch",
+      "address": "Numan, Numan, Adamawa, Nigeria",
+      "lga": "Numan",
+      "state": "Adamawa",
+      "coordinates": { "lat": 9.4646, "lng": 12.0308 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:37:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 10000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 37.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.5, "downtimeMinutesThisMonth": 110 }
+  },
+  {
+    "id": "ATM-ANM-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Ogidi Branch 1",
+      "address": "Ogidi Branch Km 15 Enugu/Onitsha Expressway, Ogidi",
+      "lga": "Idemili North",
+      "state": "Anambra",
+      "coordinates": { "lat": 6.1667, "lng": 6.8667 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:35:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 14500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.1, "downtimeMinutesThisMonth": 65 }
+  },
+  {
+    "id": "ATM-KAN-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Aminu Kano Way",
+      "address": "14 Aminu Kano Way, Kano",
+      "lga": "Kano Municipal",
+      "state": "Kano",
+      "coordinates": { "lat": 12.0022, "lng": 8.5167 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:38:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 18000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 95 },
+    "diagnostics": { "temperatureC": 38.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.0, "downtimeMinutesThisMonth": 70 }
+  },
+  {
+    "id": "ATM-OYO-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Bodija Branch",
+      "address": "12, Bodija Market Road, Ibadan",
+      "lga": "Ibadan North",
+      "state": "Oyo",
+      "coordinates": { "lat": 7.4124, "lng": 3.9061 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:36:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 5000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 37.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.7, "downtimeMinutesThisMonth": 95 }
+  },
+  {
+    "id": "ATM-ENU-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Okpara Avenue",
+      "address": "21 Okpara Avenue, Enugu",
+      "lga": "Enugu North",
+      "state": "Enugu",
+      "coordinates": { "lat": 6.4426, "lng": 7.5073 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:38:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 19000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 98 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.8, "downtimeMinutesThisMonth": 12 }
+  },
+  {
+    "id": "ATM-LAG-009",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Lekki Phase 1",
+      "address": "Plot 10, Admiralty Way, Lekki Phase 1, Lagos",
+      "lga": "Eti-Osa",
+      "state": "Lagos",
+      "coordinates": { "lat": 6.4478, "lng": 3.4723 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:37:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 7500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 100 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.5, "downtimeMinutesThisMonth": 30 }
+  },
+  {
+    "id": "ATM-FCT-003",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Wuse 2",
+      "address": "15 Ademola Adetokunbo Crescent, Wuse 2, Abuja",
+      "lga": "Abuja Municipal",
+      "state": "FCT",
+      "coordinates": { "lat": 9.0765, "lng": 7.4913 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-09T10:38:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 16500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 33.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.7, "downtimeMinutesThisMonth": 18 }
+  },
+  {
+    "id": "ATM-ABA-001",
+    "bankId": "uba-plc",
+    "location": {
+      "branchName": "Aba Main Branch",
+      "address": "164 Faulks Road, Aba",
+      "lga": "Aba South",
+      "state": "Abia",
+      "coordinates": { "lat": 5.1065, "lng": 7.3667 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:15:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 8500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.5, "downtimeMinutesThisMonth": 120 }
+  },
+  {
+    "id": "ATM-JOS-001",
+    "bankId": "first-bank-plc",
+    "location": {
+      "branchName": "Jos Central Branch",
+      "address": "5 Yakubu Gowon Way, Jos",
+      "lga": "Jos North",
+      "state": "Plateau",
+      "coordinates": { "lat": 9.8965, "lng": 8.8583 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:20:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 12000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 32.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.2, "downtimeMinutesThisMonth": 85 }
+  },
+  {
+    "id": "ATM-KAD-001",
+    "bankId": "gtbank-plc",
+    "location": {
+      "branchName": "Kaduna Central",
+      "address": "12 Ahmadu Bello Way, Kaduna",
+      "lga": "Kaduna North",
+      "state": "Kaduna",
+      "coordinates": { "lat": 10.5167, "lng": 7.4333 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:05:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 4500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.09, "cashOutRisk": 0.6, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.8, "downtimeMinutesThisMonth": 150 }
+  },
+  {
+    "id": "ATM-SOK-001",
+    "bankId": "access-bank-plc",
+    "location": {
+      "branchName": "Sokoto Main Branch",
+      "address": "23 Sultan Atiku Road, Sokoto",
+      "lga": "Sokoto South",
+      "state": "Sokoto",
+      "coordinates": { "lat": 13.0059, "lng": 5.2476 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:45:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 11000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 38.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 95.5, "downtimeMinutesThisMonth": 210 }
+  },
+  {
+    "id": "ATM-MIN-001",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Minna Central",
+      "address": "2 Paiko Road, Minna",
+      "lga": "Chanchaga",
+      "state": "Niger",
+      "coordinates": { "lat": 9.6152, "lng": 6.5478 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:30:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 18000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 95 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.9, "downtimeMinutesThisMonth": 50 }
+  },
+  {
+    "id": "ATM-ILR-001",
+    "bankId": "uba-plc",
+    "location": {
+      "branchName": "Ilorin Central",
+      "address": "12 Ibrahim Taiwo Road, Ilorin",
+      "lga": "Ilorin West",
+      "state": "Kwara",
+      "coordinates": { "lat": 8.4966, "lng": 4.5421 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:10:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 9500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.8, "downtimeMinutesThisMonth": 100 }
+  },
+  {
+    "id": "ATM-AWK-001",
+    "bankId": "first-bank-plc",
+    "location": {
+      "branchName": "Awka Main Branch",
+      "address": "7 Enugu-Onitsha Expressway, Awka",
+      "lga": "Awka South",
+      "state": "Anambra",
+      "coordinates": { "lat": 6.2107, "lng": 7.0724 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:45:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 12500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 33.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.2, "downtimeMinutesThisMonth": 35 }
+  },
+  {
+    "id": "ATM-YOL-001",
+    "bankId": "gtbank-plc",
+    "location": {
+      "branchName": "Yola Central",
+      "address": "12 Galadima Aminu Way, Yola",
+      "lga": "Yola North",
+      "state": "Adamawa",
+      "coordinates": { "lat": 9.2035, "lng": 12.4954 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:20:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 8000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 37.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.5, "downtimeMinutesThisMonth": 165 }
+  },
+  {
+    "id": "ATM-GMB-001",
+    "bankId": "access-bank-plc",
+    "location": {
+      "branchName": "Gombe Central",
+      "address": "5 Bauchi Road, Gombe",
+      "lga": "Gombe",
+      "state": "Gombe",
+      "coordinates": { "lat": 10.2897, "lng": 11.1711 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:55:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 16500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.0, "downtimeMinutesThisMonth": 130 }
+  },
+  {
+    "id": "ATM-DUT-001",
+    "bankId": "uba-plc",
+    "location": {
+      "branchName": "Dutse Main Branch",
+      "address": "8 Ibrahim Aliyu Way, Dutse",
+      "lga": "Dutse",
+      "state": "Jigawa",
+      "coordinates": { "lat": 11.7592, "lng": 9.3386 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:35:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 12000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 39.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.09, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 95.8, "downtimeMinutesThisMonth": 190 }
+  },
+  {
+    "id": "ATM-DAM-001",
+    "bankId": "first-bank-plc",
+    "location": {
+      "branchName": "Damaturu Central",
+      "address": "5 Maiduguri Road, Damaturu",
+      "lga": "Damaturu",
+      "state": "Yobe",
+      "coordinates": { "lat": 11.7465, "lng": 11.9608 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:15:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 14000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 70 },
+    "diagnostics": { "temperatureC": 40.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.10, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 94.2, "downtimeMinutesThisMonth": 260 }
+  },
+  {
+    "id": "ATM-BIC-001",
+    "bankId": "gtbank-plc",
+    "location": {
+      "branchName": "Birnin Kebbi Central",
+      "address": "12 Sani Abacha Way, Birnin Kebbi",
+      "lga": "Birnin Kebbi",
+      "state": "Kebbi",
+      "coordinates": { "lat": 12.4539, "lng": 4.1975 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:50:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 9000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 41.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.11, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 93.5, "downtimeMinutesThisMonth": 290 }
+  },
+  {
+    "id": "ATM-LOK-001",
+    "bankId": "access-bank-plc",
+    "location": {
+      "branchName": "Lokoja Central",
+      "address": "7 Murtala Mohammed Way, Lokoja",
+      "lga": "Lokoja",
+      "state": "Kogi",
+      "coordinates": { "lat": 7.8023, "lng": 6.7333 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:00:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 11000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.1, "downtimeMinutesThisMonth": 90 }
+  },
+  {
+    "id": "ATM-OGB-001",
+    "bankId": "uba-plc",
+    "location": {
+      "branchName": "Ogbomoso Central",
+      "address": "5 Oyo Road, Ogbomoso",
+      "lga": "Ogbomoso North",
+      "state": "Oyo",
+      "coordinates": { "lat": 8.1337, "lng": 4.2402 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:25:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 7000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.3, "downtimeMinutesThisMonth": 120 }
+  },
+  {
+    "id": "ATM-ONI-001",
+    "bankId": "first-bank-plc",
+    "location": {
+      "branchName": "Onitsha Main Branch",
+      "address": "12 New Market Road, Onitsha",
+      "lga": "Onitsha North",
+      "state": "Anambra",
+      "coordinates": { "lat": 6.1404, "lng": 6.7794 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:15:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 8500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 37.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.9, "downtimeMinutesThisMonth": 140 }
+  },
+  {
+    "id": "ATM-ABA-002",
+    "bankId": "fidelity-bank-plc",
+    "location": {
+      "branchName": "Aba Road Branch",
+      "address": "45 Aba-Owerri Road, Aba",
+      "lga": "Aba South",
+      "state": "Abia",
+      "coordinates": { "lat": 5.1167, "lng": 7.3667 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:40:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 12500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.5, "downtimeMinutesThisMonth": 65 }
+  },
+  {
+    "id": "ATM-MKD-001",
+    "bankId": "ecobank-nig",
+    "location": {
+      "branchName": "Makurdi Central",
+      "address": "8 George Akume Way, Makurdi",
+      "lga": "Makurdi",
+      "state": "Benue",
+      "coordinates": { "lat": 7.7323, "lng": 8.5391 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:25:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 16000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.2, "downtimeMinutesThisMonth": 110 }
+  },
+  {
+    "id": "ATM-ADK-001",
+    "bankId": "stanbic-ibtc",
+    "location": {
+      "branchName": "Ado Ekiti Central",
+      "address": "12 Iworoko Road, Ado Ekiti",
+      "lga": "Ado Ekiti",
+      "state": "Ekiti",
+      "coordinates": { "lat": 7.6233, "lng": 5.2209 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:50:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 11000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.8, "downtimeMinutesThisMonth": 145 }
+  },
+  {
+    "id": "ATM-OYC-001",
+    "bankId": "wema-bank",
+    "location": {
+      "branchName": "Oyo Central",
+      "address": "8 Awe Road, Oyo",
+      "lga": "Oyo East",
+      "state": "Oyo",
+      "coordinates": { "lat": 7.8526, "lng": 3.9312 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:40:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 9500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 70 },
+    "diagnostics": { "temperatureC": 38.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.09, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 95.7, "downtimeMinutesThisMonth": 195 }
+  },
+  {
+    "id": "ATM-GUS-001",
+    "bankId": "sterling-bank",
+    "location": {
+      "branchName": "Gusau Central",
+      "address": "5 Sokoto Road, Gusau",
+      "lga": "Gusau",
+      "state": "Zamfara",
+      "coordinates": { "lat": 12.1704, "lng": 6.6640 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:05:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 8000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 65 },
+    "diagnostics": { "temperatureC": 42.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.12, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 92.8, "downtimeMinutesThisMonth": 310 }
+  },
+  {
+    "id": "ATM-JAL-001",
+    "bankId": "uba-plc",
+    "location": {
+      "branchName": "Jalingo Central",
+      "address": "7 Barde Way, Jalingo",
+      "lga": "Jalingo",
+      "state": "Taraba",
+      "coordinates": { "lat": 8.8833, "lng": 11.3667 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:55:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 13500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 37.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.1, "downtimeMinutesThisMonth": 175 }
+  },
+  {
+    "id": "ATM-NEW-001",
+    "bankId": "first-bank-plc",
+    "location": {
+      "branchName": "New Bussa Branch",
+      "address": "12 Kainji Road, New Bussa",
+      "lga": "Borgu",
+      "state": "Niger",
+      "coordinates": { "lat": 9.8833, "lng": 4.5167 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:35:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 10000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 70 },
+    "diagnostics": { "temperatureC": 39.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.10, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 94.5, "downtimeMinutesThisMonth": 240 }
+  },
+  {
+    "id": "ATM-LAF-001",
+    "bankId": "gtbank-plc",
+    "location": {
+      "branchName": "Lafia Central",
+      "address": "8 Makurdi Road, Lafia",
+      "lga": "Lafia",
+      "state": "Nasarawa",
+      "coordinates": { "lat": 8.4939, "lng": 8.5150 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:20:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 14500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.6, "downtimeMinutesThisMonth": 105 }
+  },
+  {
+    "id": "ATM-BAU-001",
+    "bankId": "access-bank-plc",
+    "location": {
+      "branchName": "Bauchi Central",
+      "address": "15 Yakubu Bauchi Road, Bauchi",
+      "lga": "Bauchi",
+      "state": "Bauchi",
+      "coordinates": { "lat": 10.3103, "lng": 9.8439 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:10:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 8500000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 38.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.09, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 95.9, "downtimeMinutesThisMonth": 185 }
+  },
+  {
+    "id": "ATM-KTS-001",
+    "bankId": "uba-plc",
+    "location": {
+      "branchName": "Katsina Central",
+      "address": "7 IBB Way, Katsina",
+      "lga": "Katsina",
+      "state": "Katsina",
+      "coordinates": { "lat": 12.9908, "lng": 7.6018 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:30:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 12000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 70 },
+    "diagnostics": { "temperatureC": 40.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.11, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 93.8, "downtimeMinutesThisMonth": 270 }
+  },
+  {
+    "id": "ATM-ABA-003",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Aba Industrial Layout",
+      "address": "22 Industrial Layout, Aba",
+      "lga": "Aba South",
+      "state": "Abia",
+      "coordinates": { "lat": 5.1267, "lng": 7.3567 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:25:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 17500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 95 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.3, "downtimeMinutesThisMonth": 35 }
+  },
+  {
+    "id": "ATM-JOS-002",
+    "bankId": "fidelity-bank-plc",
+    "location": {
+      "branchName": "Jos Terminus",
+      "address": "Terminus Market, Jos",
+      "lga": "Jos North",
+      "state": "Plateau",
+      "coordinates": { "lat": 9.9167, "lng": 8.9000 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:45:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 6000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 33.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.4, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.1, "downtimeMinutesThisMonth": 125 }
+  },
+  {
+    "id": "ATM-KAD-002",
+    "bankId": "ecobank-nig",
+    "location": {
+      "branchName": "Kaduna South",
+      "address": "18 Waff Road, Kaduna",
+      "lga": "Kaduna South",
+      "state": "Kaduna",
+      "coordinates": { "lat": 10.5000, "lng": 7.4167 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:10:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 19000000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.8, "downtimeMinutesThisMonth": 55 }
+  },
+  {
+    "id": "ATM-SOK-002",
+    "bankId": "stanbic-ibtc",
+    "location": {
+      "branchName": "Sokoto Central Market",
+      "address": "Central Market, Sokoto",
+      "lga": "Sokoto South",
+      "state": "Sokoto",
+      "coordinates": { "lat": 13.0059, "lng": 5.2476 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:50:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 9500000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 41.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.10, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 94.7, "downtimeMinutesThisMonth": 230 }
+  },
+  {
+    "id": "ATM-MIN-002",
+    "bankId": "wema-bank",
+    "location": {
+      "branchName": "Minna Tunga",
+      "address": "Tunga Market, Minna",
+      "lga": "Chanchaga",
+      "state": "Niger",
+      "coordinates": { "lat": 9.6000, "lng": 6.5500 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:35:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 8500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 37.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.4, "downtimeMinutesThisMonth": 160 }
+  },
+  {
+    "id": "ATM-ILR-002",
+    "bankId": "sterling-bank",
+    "location": {
+      "branchName": "Ilorin GRA",
+      "address": "12 GRA Road, Ilorin",
+      "lga": "Ilorin West",
+      "state": "Kwara",
+      "coordinates": { "lat": 8.5000, "lng": 4.5500 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:15:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 16500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 35.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.3, "downtimeMinutesThisMonth": 75 }
+  },
+  {
+    "id": "ATM-AWK-002",
+    "bankId": "uba-plc",
+    "location": {
+      "branchName": "Awka GRA",
+      "address": "5 GRA Road, Awka",
+      "lga": "Awka South",
+      "state": "Anambra",
+      "coordinates": { "lat": 6.2207, "lng": 7.0824 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:55:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 14500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.9, "downtimeMinutesThisMonth": 95 }
+  },
+  {
+    "id": "ATM-YOL-002",
+    "bankId": "first-bank-plc",
+    "location": {
+      "branchName": "Yola Jimeta",
+      "address": "Jimeta Modern Market, Yola",
+      "lga": "Yola North",
+      "state": "Adamawa",
+      "coordinates": { "lat": 9.2035, "lng": 12.4954 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:35:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 11000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 39.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.09, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 95.2, "downtimeMinutesThisMonth": 205 }
+  },
+  {
+    "id": "ATM-GMB-002",
+    "bankId": "gtbank-plc",
+    "location": {
+      "branchName": "Gombe New Market",
+      "address": "New Market Road, Gombe",
+      "lga": "Gombe",
+      "state": "Gombe",
+      "coordinates": { "lat": 10.2897, "lng": 11.1711 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:05:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 12500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 38.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.7, "downtimeMinutesThisMonth": 150 }
+  },
+  {
+    "id": "ATM-DUT-002",
+    "bankId": "access-bank-plc",
+    "location": {
+      "branchName": "Dutse Market",
+      "address": "Main Market, Dutse",
+      "lga": "Dutse",
+      "state": "Jigawa",
+      "coordinates": { "lat": 11.7592, "lng": 9.3386 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:45:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 7000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 70 },
+    "diagnostics": { "temperatureC": 42.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.11, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 93.9, "downtimeMinutesThisMonth": 265 }
+  },
+  {
+    "id": "ATM-DAM-002",
+    "bankId": "ecobank-nig",
+    "location": {
+      "branchName": "Damaturu Market",
+      "address": "Main Market, Damaturu",
+      "lga": "Damaturu",
+      "state": "Yobe",
+      "coordinates": { "lat": 11.7465, "lng": 11.9608 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:20:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 15500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 41.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.10, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 94.8, "downtimeMinutesThisMonth": 225 }
+  },
+  {
+    "id": "ATM-BIC-002",
+    "bankId": "stanbic-ibtc",
+    "location": {
+      "branchName": "Birnin Kebbi Market",
+      "address": "Central Market, Birnin Kebbi",
+      "lga": "Birnin Kebbi",
+      "state": "Kebbi",
+      "coordinates": { "lat": 12.4539, "lng": 4.1975 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:00:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 8500000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 65 },
+    "diagnostics": { "temperatureC": 43.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.13, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 92.1, "downtimeMinutesThisMonth": 355 }
+  },
+  {
+    "id": "ATM-LOK-002",
+    "bankId": "wema-bank",
+    "location": {
+      "branchName": "Lokoja Market",
+      "address": "Main Market, Lokoja",
+      "lga": "Lokoja",
+      "state": "Kogi",
+      "coordinates": { "lat": 7.8023, "lng": 6.7333 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:20:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 11500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.4, "downtimeMinutesThisMonth": 115 }
+  },
+  {
+    "id": "ATM-OGB-002",
+    "bankId": "sterling-bank",
+    "location": {
+      "branchName": "Ogbomoso Market",
+      "address": "Main Market, Ogbomoso",
+      "lga": "Ogbomoso North",
+      "state": "Oyo",
+      "coordinates": { "lat": 8.1337, "lng": 4.2402 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:30:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 9500000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 75 },
+    "diagnostics": { "temperatureC": 37.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.09, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.0, "downtimeMinutesThisMonth": 170 }
+  },
+  {
+    "id": "ATM-ONI-002",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Onitsha Main Market",
+      "address": "Main Market, Onitsha",
+      "lga": "Onitsha North",
+      "state": "Anambra",
+      "coordinates": { "lat": 6.1404, "lng": 6.7794 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:25:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 18500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 95 },
+    "diagnostics": { "temperatureC": 38.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.6, "downtimeMinutesThisMonth": 65 }
+  },
+  {
+    "id": "ATM-ABA-004",
+    "bankId": "fidelity-bank-plc",
+    "location": {
+      "branchName": "Aba Market Square",
+      "address": "Market Square, Aba",
+      "lga": "Aba South",
+      "state": "Abia",
+      "coordinates": { "lat": 5.1065, "lng": 7.3667 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:50:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 13500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 97.7, "downtimeMinutesThisMonth": 100 }
+  },
+  {
+    "id": "ATM-JOS-003",
+    "bankId": "ecobank-nig",
+    "location": {
+      "branchName": "Jos University",
+      "address": "University of Jos Campus",
+      "lga": "Jos North",
+      "state": "Plateau",
+      "coordinates": { "lat": 9.8965, "lng": 8.8583 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:15:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 17500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 33.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.06, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 99.1, "downtimeMinutesThisMonth": 40 }
+  },
+  {
+    "id": "ATM-KAD-003",
+    "bankId": "stanbic-ibtc",
+    "location": {
+      "branchName": "Kaduna Airport",
+      "address": "Kaduna International Airport",
+      "lga": "Kaduna North",
+      "state": "Kaduna",
+      "coordinates": { "lat": 10.6000, "lng": 7.4500 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:05:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 12000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 95 },
+    "diagnostics": { "temperatureC": 32.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.9, "downtimeMinutesThisMonth": 50 }
+  },
+  {
+    "id": "ATM-SOK-003",
+    "bankId": "wema-bank",
+    "location": {
+      "branchName": "Sokoto University",
+      "address": "Usmanu Danfodiyo University, Sokoto",
+      "lga": "Sokoto North",
+      "state": "Sokoto",
+      "coordinates": { "lat": 13.0059, "lng": 5.2476 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T08:55:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 14500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 85 },
+    "diagnostics": { "temperatureC": 40.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.09, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 95.4, "downtimeMinutesThisMonth": 200 }
+  },
+  {
+    "id": "ATM-MIN-003",
+    "bankId": "sterling-bank",
+    "location": {
+      "branchName": "Minna Airport",
+      "address": "Minna Airport Terminal",
+      "lga": "Chanchaga",
+      "state": "Niger",
+      "coordinates": { "lat": 9.6500, "lng": 6.5000 }
+    },
+    "model": "Diebold Opteva 520",
+    "type": "WITHDRAWAL_ONLY",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T09:40:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 15000000, "currentAmount": 10000000,
+      "lowThreshold": 3000000, "emptyThreshold": 500000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 80 },
+    "diagnostics": { "temperatureC": 36.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.08, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 96.5, "downtimeMinutesThisMonth": 155 }
+  },
+  {
+    "id": "ATM-ILR-003",
+    "bankId": "zenith-bank-plc",
+    "location": {
+      "branchName": "Ilorin Airport",
+      "address": "Ilorin International Airport",
+      "lga": "Ilorin West",
+      "state": "Kwara",
+      "coordinates": { "lat": 8.4400, "lng": 4.4800 }
+    },
+    "model": "NCR SelfServ 80",
+    "type": "FULL_FUNCTION",
+    "status": "ONLINE",
+    "lastUpdated": "2025-11-10T10:30:00.000Z",
+    "networkStatus": "CONNECTED",
+    "cashLevel": {
+      "totalCapacity": 20000000, "currentAmount": 16500000,
+      "lowThreshold": 4000000, "emptyThreshold": 1000000
+    },
+    "powerStatus": { "mains": true, "generator": true, "inverter": true, "fuelLevel": 90 },
+    "diagnostics": { "temperatureC": 34.0, "errorCodes": [], "lastErrorTimestamp": null },
+    "predictiveScore": { "failureRisk": 0.07, "cashOutRisk": 0.0, "networkFailureRisk": 0.05 },
+    "uptimeMetrics": { "uptimePercentageLast7Days": 98.7, "downtimeMinutesThisMonth": 60 }
+  }
+]

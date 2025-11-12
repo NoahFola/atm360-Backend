@@ -1,0 +1,118 @@
+GET /atms
+Description: Retrieves a list of all ATM resources.
+
+Query Parameters (Optional):
+  status: (string) Filter by status (e.g., ?status=OFFLINE).
+  region: (string) Filter by region (e.g., ?region=Lagos).
+
+Success Response (200 OK):
+  Returns a JSON array of ATM objects.
+  Returns an empty array [] if no ATMs match.
+
+GET /atms/:id
+Description: Retrieves a single ATM resource by its unique ID.
+
+Path Parameters:
+  id (string): The unique identifier of the ATM.
+
+Success Response (200 OK):
+  Returns the corresponding ATM object.
+
+Error Responses:
+  404 Not Found: An ATM with the specified id does not exist.
+
+POST /atms
+Description: Creates a new ATM resource.
+
+Request Body:
+  A JSON object containing the data for the new ATM. Server-generated fields (id, createdAt, updatedAt, lastUpdated) should be omitted.
+
+Example Request Body:
+{
+  "bankId": "bank-001",
+  "location": {
+    "address": "257 Murtala Muhammed Way",
+    "lga": "Yaba",
+    "region": "Lagos Mainland",
+    "state": "Lagos",
+    "coordinates": { "lat": 6.509, "lng": 3.379 }
+  },
+  "model": "Diebold Opteva 520",
+  "type": "FULL_FUNCTION",
+  "status": "ONLINE",
+  "networkStatus": "CONNECTED",
+  "cashLevel": {
+    "totalCapacity": 20000000,
+    "currentAmount": 15000000,
+    "lowThreshold": 5000000,
+    "emptyThreshold": 1000000
+  },
+  "powerStatus": {
+    "mains": true,
+    "generator": true,
+    "inverter": false,
+    "fuelLevel": 85
+  }
+}
+
+Success Response (201 Created):
+  Returns the complete, newly created ATM object, including the server-generated id and timestamps.
+
+Error Responses:
+  400 Bad Request: The request body is missing required fields or contains invalid data.
+
+PATCH /atms/:id
+Description: Partially updates an existing ATM resource. Only the fields provided in the request body will be modified. This is the recommended method for updates.
+
+Path Parameters:
+  id (string): The unique identifier of the ATM to be updated.
+
+Request Body:
+  A JSON object containing only the fields to be updated.
+
+Example (Updating Status and Cash):
+{
+  "status": "OUT_OF_CASH",
+  "cashLevel": {
+    "currentAmount": 50000
+  },
+  "diagnostics": {
+    "errorCodes": ["C101"]
+  }
+}
+
+Success Response (200 OK):
+  Returns the fully updated ATM object.
+
+Error Responses:
+  400 Bad Request: The request body contains invalid data.
+  404 Not Found: An ATM with the specified id does not exist.
+
+PUT /atms/:id
+Description: Replaces an existing ATM resource. This is a full replacement; the entire ATM object must be provided. Any omitted fields may be set to null or their default values.
+Note: PATCH is generally preferred for updates.
+
+Path Parameters:
+  id (string): The unique identifier of the ATM to be updated.
+
+Request Body:
+  A complete JSON object representing the ATM's new state (excluding server-generated fields like id, createdAt, etc.).
+
+Success Response (200 OK):
+  Returns the fully updated ATM object.
+
+Error Responses:
+  400 Bad Request: The request body is invalid or incomplete.
+  404 Not Found: An ATM with the specified id does not exist.
+
+DELETE /atms/:id
+Description: Permanently removes an ATM resource from the system.
+
+Path Parameters:
+  id (string): The unique identifier of the ATM to be deleted.
+
+Success Response (204 No Content):
+  Indicates successful deletion. No data is returned in the response body.
+
+Error Responses:
+  404 Not Found: An ATM with the specified id does not exist.
