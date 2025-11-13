@@ -94,10 +94,15 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
     }
   }}
   catch{
-    const num = Math.floor(Math.random()*12)
-    const engStmt = db.prepare('SELECT * FROM Engineers WITH(INDEX = ?');
-    const engineer = engStmt.get(num) as Engineer | undefined;
-    id_  = engineer? engineer.id : 0;
+    try{
+      const num = Math.floor(Math.random()*12)
+      const engStmt = db.prepare('SELECT * FROM Engineers ORDER BY RANDOM() LIMIT 1');
+      const engineer = engStmt.get() as Engineer | undefined;
+      id_  = engineer? engineer.id : 0;
+    }catch(e){
+      throw new Error('ATM not found');
+    }
+    
 
   }
 
