@@ -7,13 +7,15 @@ const router = express.Router();
 
 
 router.get('/', getAllAtms);
-router.get('/:id', getAtmById);
-router.post('/', createAtm);
-router.patch('/:id', updateAtm);
-router.delete('/:id', deleteAtm); 
 router.get('/predictions', getAtmPredictions);
 router.get('/telemetry', getAtmTelemetry);
 router.post('/simulate/faults', simulateFaults);
+
+router.get('/:id', getAtmById);
+router.post('/', createAtm);
+router.patch('/:id', updateAtm);
+router.delete('/:id', deleteAtm);
+
 
 
 export default router;
