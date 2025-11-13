@@ -11,7 +11,7 @@ import type { Bank, User, BankAdministrator, Engineer, CustomerProfile, ATM, Tic
 // --- 1. Get Path to Seed Data ---
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const dataDir = path.join(__dirname, 'seed-json-files');
+const dataDir = path.join(__dirname, '../../core/seed-json-files');
 
 // --- 2. Define Schema (Copied from your previous file) ---
 const createSchemaSql = `
@@ -309,3 +309,4 @@ export function initializeDatabase() {
     console.log('[DB Init]: Seed script finished. Connection remains open for server.');
   }
 }
+

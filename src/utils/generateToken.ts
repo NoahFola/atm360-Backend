@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 // (e.g., loaded from config/env.ts or process.env).
 // For the MVP, we'll define a mock secret here, but flag it to be fixed.
 // TODO: Move this to an environment variable file (BE1's task)
-const MOCK_JWT_SECRET = 'your-very-secret-key-for-mvp';
+const MOCK_JWT_SECRET = process.env.JWT_SECRET_KEY || 'your-very-secret-key-for-mvp';
 const MOCK_JWT_EXPIRES_IN = '1d'; // Token expires in 1 day
 
 /**
