@@ -20,7 +20,8 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "haversine-distance": "^1.2.4",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "onnxruntime-node": "^1.23.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
