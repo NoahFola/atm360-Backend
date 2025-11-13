@@ -14,15 +14,16 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
   let id_;
   let atm;
     try{
-  const session = await ort.InferenceSession.create('../predictors/xgboost_regressor.onnx');
+  const session = await ort.InferenceSession.create('src/predictors/xgboost_regressor.onnx');
   const outputName = session.outputNames[0];
+  const inputName = session.inputNames[0];
 
   // --- 1. Get ATM details (we need its city) ---
   const atmStmt = db.prepare('SELECT * FROM ATMs WHERE id = ?');
   atm = atmStmt.get(atmId) as ATM | undefined;
 
   const tcktStmt = db.prepare('SELECT * FROM Tickets WHERE id = ?');
-  const ticket = tcktStmt.get(atmId) as Ticket | undefined;
+  const ticket = tcktStmt.get(ticketId) as Ticket | undefined;
 
   if (!ticket) {
     throw new Error('Ticket not found');
@@ -30,13 +31,26 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
   if (!atm) {
     throw new Error('ATM not found');
   }
+  atm.location = JSON.parse(atm.location.toString())
   // --- 2. Find an "available" engineer in the same city ---
   // Our mock logic is simple: find *any* engineer in the same region.
   // A real app would check skills, availability, workload, etc.
   const stmt = db.prepare('SELECT * FROM Engineers');
   const engineers = stmt.all() as Engineer[];
   
-  const issue = ticket.issueType
+  let issue: String;
+  if(['CARD_JAM', 'HARDWARE', 'SCREEN_FAILURE', 'OTHER'].includes(issueType)){
+     issue = 'HARDWARE'
+  }
+  else if(issueType == 'POWER_ISSUE'){
+     issue = 'POWER';
+  }
+  else if(issueType == 'NETWORK_FAILURE'){
+     issue = 'NETWORK';
+  }
+  else{
+     issue = 'SOFTWARE';
+  }
   const atmLocation = {latitude: atm.location.coordinates.lat, longitude:atm.location.coordinates.lng};
 
   const sevMap: Record<string, number> = {
@@ -48,7 +62,7 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
 
   const scores = engineers.map(async function(engineer){
 
-    const skill_match = engineer.specialization.includes(issueType as any)? 1 : 0;
+    const skill_match = engineer.specialization.includes(issue as any)? 1 : 0;
 
     const engLoc = engineer.lastKnownLocation
         ? {
@@ -65,9 +79,10 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
 
     const review_score = 4.0;
     const sev = ticket.severity || 'MEDIUM'
-    const severity =  sevMap[sev]
+    const severity =  sevMap[sev];
+    const tensor = new ort.Tensor('float32', Float32Array.from([skill_match, distance, review_score, severity]), [1, 4]) ;
 
-    const input = { input: new ort.Tensor('float32', Float32Array.from([skill_match, distance, review_score, severity]), [1, 4]) };
+    const input = { [inputName]: tensor};
     const output = await session.run(input);
 
     const predictionTensor = output[outputName];
@@ -80,6 +95,7 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
 
 
   const resolvedScores = await Promise.all(scores);
+  console.log(resolvedScores);
 
   let id = "";
   let highest = 0;
@@ -92,25 +108,22 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
       id_ = engineerId_;
       highest = scoreValue;
     }
-  }}
-  catch{
-    const num = Math.floor(Math.random()*12)
-    const engStmt = db.prepare('SELECT * FROM Engineers WITH(INDEX = ?');
+  }}catch(err){
+    console.log("model failed:", err);
+    const num = Math.floor(Math.random()*12);
+    const engStmt = db.prepare('SELECT * FROM Engineers LIMIT 1 OFFSET ?');
     const engineer = engStmt.get(num) as Engineer | undefined;
     id_  = engineer? engineer.id : 0;
-
   }
 
-  if (!atm) {
-    throw new Error('ATM not found');
-  }
   
+  console.log(id_);
   const engineerStmt = db.prepare('SELECT * FROM Engineers WHERE id = ? LIMIT 1');
-  atm.location = JSON.parse(atm.location.toString())
-  const engineer = engineerStmt.get(id_) as Engineer | undefined;
+  const engineer = engineerStmt.get(String(id_)) as Engineer | undefined;
 
   if (!engineer) {
     // No engineer found in that city. Create an 'open' ticket.
+    console.log("creating ticket");
     const openTicketStmt = db.prepare(
       'INSERT INTO Tickets (atmId, issueType, status, engineerId) VALUES (?, ?, ?, ?)'
     );
@@ -129,9 +142,9 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
   const assignedTicketStmt = db.prepare(
     'UPDATE Tickets SET engineerId = ?, status = ?  WHERE id = ?'
   );
-  const info = assignedTicketStmt.run(engineer.userId, 'assigned', ticketId);
+  const info = assignedTicketStmt.run(engineer.id, 'assigned', ticketId);
 
-  console.log(`Dispatched Engineer ${engineer.name} (ID: ${engineer.id}) to ATM ${atm.id} in ${atm.location.region}`);
+  console.log(`Dispatched Engineer ${engineer.name} (ID: ${engineer.id}) to ATM ${atm?.id} in ${atm?.location.region}`);
 
   // --- 4. Return the new ticket ---
   return {
