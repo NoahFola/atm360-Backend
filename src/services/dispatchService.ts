@@ -81,8 +81,6 @@ export const assignNearestEngineer = async (ticketId: string, atmId: string, iss
     const sev = ticket.severity || 'MEDIUM'
     const severity =  sevMap[sev];
     const tensor = new ort.Tensor('float32', Float32Array.from([skill_match, distance, review_score, severity]), [1, 4]) ;
-    
-    console.log(engineer.id, severity, distance)
 
     const input = { [inputName]: tensor};
     const output = await session.run(input);
