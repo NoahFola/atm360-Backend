@@ -14,7 +14,7 @@ import { initializeDatabase } from './db/seed.js';
 dotenv.config();
 
 const app: Express = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 // Initialize the database with seed data
 initializeDatabase();
