@@ -34,9 +34,25 @@ export const autoDispatchEngineer = (req: Request, res: Response) => {
     if (!atmId || !issueType) {
       return res.status(400).json({ message: 'Please provide atmId and issueType' });
     }  
-
+    let result;
     // Call the service logic
-    const result = assignNearestEngineer(ticketId, atmId, issueType);
+    try{
+      result = assignNearestEngineer(ticketId, atmId, issueType);
+    } catch(err){
+      let errorMessage = 'Error during dispatch';
+      if (err instanceof Error) {
+        errorMessage = err.message;
+      }
+      console.error('Dispatch error:', errorMessage);
+      
+      // Handle specific errors
+      if (errorMessage === 'ATM not found') {
+        return res.status(404).json({ message: errorMessage });
+      }
+      
+      res.status(500).json({ message: errorMessage });
+    }
+    
 
     // Respond with the outcome from the service
     res.status(201).json(result);
